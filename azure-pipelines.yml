@@ -9,14 +9,14 @@ steps:
 - task: AzureCLI@1
   displayName: 'Install the CLI'
   inputs:
-    azureSubscription: '648554b4-5677-47fb-80cd-7d634d6903a5'
+    azureSubscription: 'Patrocinio de Microsoft Azure'
     scriptLocation: inlineScript
     inlineScript: 'az extension add -n azure-cli-ml'
 
 - task: AzureCLI@1
   displayName: 'Attach folder to workspace'
   inputs:
-    azureSubscription: '648554b4-5677-47fb-80cd-7d634d6903a5'
+    azureSubscription: 'Patrocinio de Microsoft Azure'
     scriptLocation: inlineScript
     inlineScript: 'az ml folder attach -w pruebas -g ML_Services'
 
